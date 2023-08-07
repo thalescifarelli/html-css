@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Tarefa</title>
+    <link rel="stylesheet" href="./css/styleModificarTarefa.css">
+</head>
+<body>
+    <header>
+        <h1>Atualizar Tarefa</h1>
+    </header>
+    <main>
+        <form id="modificarTarefa">
+            <div>
+                <label for="tarefa">Tarefa</label>
+                <select name="tarefaDll" id="tarefaDll" onchange="habilitarCampos()">
+                    <option value=""> </option>
+                </select>
+            </div>
+            <div>
+                <label for="tarefa">Nome da tarefa</label>
+                <input type="text" name="nome" id="nome" required disabled>
+            </div>
+            <div>
+                <label for="descricao">Descrição da tarefa</label>
+                <input type="text" name="descricao" id="descricao" required disabled>
+            </div>
+            <div>
+                <label for="status">Status</label>
+                <select name="status" id="status" disabled>
+                    <option value="1">1 - A Fazer</option>
+                    <option value="2">2 - Em Andamento</option>
+                    <option value="3">3 - Concluído</option>
+                </select>
+            </div>
+            <div>
+                <label for="responsavel">Responsável</label>
+                <select name="usuarioDll" id="usuarioDll" disabled>
+                    <option value="ninguem">Ninguem</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" id="entrar">Atualizar</button>
+            </div>
+        </form>
+    </main>
+    <script src="./scripts/scriptModificarTarefa.js"></script>
+</body>
+</html>

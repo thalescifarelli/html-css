@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Municipios do Brasil</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="scriptListarTarefas.js"></script>
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="./css/styleTarefas.css">
+    <script src="./scripts/scriptListarTarefas.js"></script>
 </head>
 <body>
 
-    <h1>Municipios Brasileiros</h1>
-
+    <h1>Tarefas</h1>
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="" onclick="redirecionarPagina('cadastrar')">Cadastrar Tarefa</a></li>
+                <li><a href="" onclick="redirecionarPagina('modificar')">Modificar Tarefa</a></li>
+                <li><a href="" onclick="redirecionarPagina('excluir')">Excluir Tarefa</a></li>
+            </ul>
+        </nav>
+    </aside>
     <table id="tabela-dados">
         <thead>
-            <th>Região</th>
-            <th>Estado</th>
-            <th>Sigla do estado</th>
-            <th>Municipio</th>
+            <th>Id</th>
+            <th>Responsável</th>
+            <th>Tarefa</th>
+            <th>Descrição</th>
+            <th>Status</th>
         </thead>
         <tbody>
 
         </tbody>
     </table>
+    <footer>
+        <p>Legenda:</p>
+            <p id="aFazer">1 - A Fazer</p>
+            <p id="emAndamento">2 - Em Andamento</p>
+            <p id="concluido">3 - Concluído</p>
+    </footer>
 </body>
 </html>
